@@ -1,0 +1,24 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            // Example options for -a:
+            // https://dev.criticalmanufacturing.io/repository/http/ConnectIoT
+            // ../../dependencies/IoTNodeAddons
+            "type": "node",
+            "request": "launch",
+            "name": "Start PackageBundler",
+            "program": "${workspaceRoot}/src/index.js",
+            "args": [
+                "-d",
+                "-o=."
+            ],
+            "cwd": "C:/",
+            "outFiles": [],
+            "outputCapture": "std"
+        }
+    ]
+}

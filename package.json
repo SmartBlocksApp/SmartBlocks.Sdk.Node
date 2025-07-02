@@ -1,0 +1,33 @@
+{
+    "name": "@smartblocks/node-sdk",
+    "version": "1.0.0",
+    "description": "SmartBlocks SDK for Node",
+    "keywords": [
+        "SmartBlocks",
+        "IoT"
+    ],
+    "type": "module",
+    "main": "src/index.js",
+    "homepage": "https://github.com/SmartBlocksApp/SmartBlocks.Sdk.Node",
+    "scripts": {
+        "build": "tsc",
+        "watch": "npm run watchPackage",
+        "watchPackage": "tsc --preserveWatchOutput -w",
+        "lint": "eslint ./**/*.ts",
+        "lint:fix": "eslint ./**/*.ts --fix",
+        "prepublishOnly": "npm run build"
+    },
+    "devDependencies": {
+        "@types/node": "22.15.17",
+        "@typescript-eslint/eslint-plugin": "8.32.0",
+        "@typescript-eslint/parser": "8.32.0",
+        "eslint": "9.26.0",
+        "eslint-plugin-mocha": "11.0.0",
+        "typescript": "5.8.3"
+    },
+    "dependencies": {
+        "uuid": "11.1.0"
+    },
+    "license": "GPL-3.0",
+    "author": "João Santos - Smart Blocks"
+}
