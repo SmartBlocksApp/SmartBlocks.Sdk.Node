@@ -3,7 +3,7 @@ import { Instruction, IBranchInstruction, IExecuteInstruction, ICallbackInstruct
 export interface IInstructionsBuilder {
     add(instruction: Instruction<unknown>): IInstructionsBuilder;
     addRaw(raw: string): IInstructionsBuilder;
-    execute(name: string, args: any[], service: string): IExecuteInstruction;
+    execute(name: string, args: any[], service?: string): IExecuteInstruction;
     branch(name: string, code: string): IBranchInstruction;
     callback(name: string, branchName?: string): ICallbackInstruction;
 }

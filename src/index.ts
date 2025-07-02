@@ -1,4 +1,4 @@
-export * as Builder from "./models/builder";
-export * as SmartBlock from "./models/smartBlock";
+export * from "./models/builder";
+export * from "./models/smartBlock";
 
 export * from "./implementations";

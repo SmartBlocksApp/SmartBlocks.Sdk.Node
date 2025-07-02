@@ -20,6 +20,12 @@ export class Execute implements IExecuteInstruction {
         };
     }
 
+    public asSubscribe(): this {
+        this._instruction.type = InstructionType.Subscribe;
+
+        return this;
+    }
+
     public service(name: string): this {
         this._instruction.service = name;
 

@@ -6,5 +6,6 @@ export type IExecuteInstruction = {
    name(name: string): IExecuteInstruction;
    addArgument(arg: any): IExecuteInstruction;
    setArguments(args: any[]): IExecuteInstruction;
+   asSubscribe(): IExecuteInstruction;
    build(): Instruction<ExecuteParameters>;
 }
