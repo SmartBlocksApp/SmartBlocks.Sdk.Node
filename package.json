@@ -1,6 +1,6 @@
 {
     "name": "@smartblocks/node-sdk",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "SmartBlocks SDK for Node",
     "keywords": [
         "SmartBlocks",
@@ -26,7 +26,6 @@
         "typescript": "5.8.3"
     },
     "dependencies": {
-        "uuid": "11.1.0"
     },
     "license": "GPL-3.0",
     "author": "João Santos - Smart Blocks"
