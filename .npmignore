@@ -6,3 +6,5 @@ coverage
 tsconfig.json
 tslint.json
 .git*
+.editorconfig
+.eslintrc.json
