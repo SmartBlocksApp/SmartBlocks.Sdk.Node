@@ -1,6 +1,6 @@
-import { SmartBlock } from "..";
+import { Block } from "../models/smartBlock";
 
-export const blankSmartBlock: SmartBlock.Block = {
+export const blankSmartBlock: Block = {
     caption: "",
     id: "",
     isCollapsed: false,
