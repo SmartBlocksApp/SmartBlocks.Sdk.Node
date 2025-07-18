@@ -1,11 +1,13 @@
 {
     "name": "@smartblocks/node-sdk",
-    "version": "0.1.1",
+    "version": "0.1.3",
     "description": "SmartBlocks SDK for Node",
     "keywords": [
         "SmartBlocks",
         "IoT"
     ],
+    "license": "GPL-3.0",
+    "author": "Joao Santos - Smart Blocks",
     "type": "module",
     "main": "src/index.js",
     "homepage": "https://github.com/SmartBlocksApp/SmartBlocks.Sdk.Node",
@@ -27,6 +29,28 @@
     },
     "dependencies": {
     },
-    "license": "GPL-3.0",
-    "author": "João Santos - Smart Blocks"
+    "files": [
+        "src",
+        "package.json",
+        "README.md",
+        "LICENSE"
+    ],
+    "exports": {
+        ".": {
+            "default": "./src/index.js",
+            "types": "./src/index.d.ts"
+        },
+        "./dist/*": {
+            "default": "./dist/*.js",
+            "types": "./dist/*.d.ts"
+        },
+        "./dist/test": {
+            "default": "./dist/test/index.js",
+            "types": "./dist/test/index.d.ts"
+        },
+        "./test": {
+            "default": "./dist/test/index.js",
+            "types": "./dist/test/index.d.ts"
+        }
+    }
 }
